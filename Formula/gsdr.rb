@@ -1,13 +1,13 @@
 class Gsdr < Formula
   desc "GSD Reloaded - Autonomous spec-driven development for Claude Code"
   homepage "https://github.com/leonaffi-byte/gsdr"
-  url "https://registry.npmjs.org/gsdr/-/gsdr-1.0.0.tgz"
+  url "https://registry.npmjs.org/@leonaffi/gsdr/-/gsdr-1.0.0.tgz"
   license "MIT"
 
   depends_on "node@18"
 
   def install
-    system "npm", "install", "--global", "--prefix", prefix, "gsdr@#{version}"
+    system "npm", "install", "--global", "--prefix", prefix, "@leonaffi/gsdr@#{version}"
   end
 
   def post_install
